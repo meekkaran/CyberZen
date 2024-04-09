@@ -51,21 +51,29 @@ const Footer: React.FC = () => {
             </List>
           </Box>
 
-          <Box sx={{ display: 'flex' }}>
-            <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
-              <FacebookIcon />
-            </Link>
-            <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
-              <InstagramIcon />
-            </Link>
-            <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
-              <LinkedInIcon />
-            </Link>
-            
-            <Typography variant="body2" color="inherit" align="center">
-                © 2024 All Rights Reserved
-            </Typography>
-          </Box>
+          <Box sx={{ flexGrow: 1 }}>
+  {/* Use flexbox to arrange items vertically */}
+  <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
+    {/* Social Media Links */}
+    <Box sx={{ marginBottom: 1 }}>
+      <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
+        <FacebookIcon />
+      </Link>
+      <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
+        <InstagramIcon />
+      </Link>
+      <Link href="#" color="inherit" sx={{ marginRight: 2 }}>
+        <LinkedInIcon />
+      </Link>
+    </Box>
+    {/* Copyright Text */}
+    <Typography variant="body2" color="inherit">
+      © 2024 All Rights Reserved
+    </Typography>
+  </Box>
+</Box>
+
+
           
         </Toolbar>
       </Container>
