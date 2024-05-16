@@ -8,13 +8,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <Typography variant="h2"> Empowering businesses through insightful consultancy and innovative software solutions.</Typography>
-          <Typography variant="h3">"We specialize in consultancy and software solutions.</Typography>
+      {/* section 1 */}
+      <Grid container spacing={2} p={10}>
+        <Grid item xs={6}  alignItems="center" justifyContent="center" textAlign={'center'}>
+          <Typography variant="h4"> "We specialize in consultancy and software solutions.</Typography>
+          <Typography variant="h6">Empowering businesses through insightful consultancy and innovative software solutions.</Typography>
         </Grid>
-        <Grid item xs={6}>
-          <Image src="/images/backgroundimg.jpg" alt="Your Image" width={500} height={300} />
+        <Grid item xs={6} p={4}>
+          <Image src="/images/backgroundimg.jpg" alt="Your Image" width={500} height={500} style={{ borderRadius: '10px' }} />
         </Grid>
       </Grid>
       <Footer />
