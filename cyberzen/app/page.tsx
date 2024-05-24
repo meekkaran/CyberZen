@@ -11,7 +11,7 @@ import FemaleIcon from '@mui/icons-material/Female';
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* section 1 */}
       <Grid container spacing={2} p={10}>
       <Grid item xs={6} display="flex" justifyContent="center" alignItems="center">
@@ -112,7 +112,7 @@ export default function Home() {
     </>
     
       <Partner />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
