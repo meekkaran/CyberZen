@@ -1,12 +1,11 @@
-import { Box } from "@mui/material";
-import * as React from "react";
+import React from 'react';
 
-const About: React.FC = () => {
-  return (
-    <Box>
-        
-    </Box>
-  );
+const AboutPage = () => {
+    return (
+        <div>
+            <h1>About Us</h1>
+        </div>
+    );
 };
 
-export default About;
+export default AboutPage;
